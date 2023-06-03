@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">VACATION</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#active"></a>Home</li>
+            <li><a href="#package" ></a>Tours</li>
+            <li><a href="#explore" ></a>Explore</li>
+            <li><a href="#tours"></a>About</li>
+            <li class="ctn"><a href="#footer" ></a>Contact</li>
+        </ul>
+        <img src="./images/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Enjoy The Vacation To The Fullest</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL HOLIDAY</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+    <!--tour destination package-->
+    <section class="package">
+        <div class="title">
+            <h1>Package Tours</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./images/img1.jpg">
+                <h4>Mountains</h4>
+                <p>Mountain destinations offer breathtaking beauty with their majestic peaks, rugged landscapes, and serene vistas.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            
+            <div class="col">
+                <img src="./images/img2.jpg">
+                <h4>Beaches</h4>
+                <p>Beach destinations are a visual feast, where azure waters meet endless stretches of soft sand.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+    </div>
+    </section>
+    <section class="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <p>Embarking on a journey to explore the world through travel opens a world of wonder and discovery. From the ancient ruins of Machu Picchu to the bustling streets of Tokyo, each holiday destination offers a unique tapestry of cultures, landscapes, and experiences, inviting you to broaden your horizons, forge meaningful connections, and create memories that will last a lifetime.</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+    <section class="tours">
+        <div class="row">
+          <div class="col content-col">
+            <h1>UPCOMING TOURS & DESTINATION</h1>
+            <div class="line"></div>
+            <p>Embark on a mesmerizing adventure through vibrant cities and ancient temples on our captivating Asian tour.</p>
+            <a href="#" class="ctn">Learn More</a>
+          </div>
+          <div class="col image-col">
+            <div class="image-gallery">
+              <img src="./images/japan.jpg" alt="">
+              <img src="./images/china.jpg" alt="">
+              <img src="./images/korea.jpg" alt="">
+              <img src="./images/singapore.jpg" alt="">
+            </div>
+          </div>
+        </div>
+    </section>  
+    <section class="footer">
+        <p>12th Cross, Wilson Garde, Bangalore, 560027 | Phone: 00887222387 | Email: contact@gmail.com</p>
+        <p>Copyright © 2023 Tourism</p>
+      </section>    
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+})
+    </script>
+</body>
+</html>
